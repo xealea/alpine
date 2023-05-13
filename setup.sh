@@ -8,7 +8,7 @@ doas adduser lea video
 doas adduser lea audio
 
 # List of packages to install, sorted alphabetically
-packages="acpi alacritty \
+packages="acpi alacritty berry \
           consolekit2 cpufreqd curl dbus dhcpcd dmenu \
           dunst eudev feh gvfs htop i3lock \
           kitty libinput-libs libxcb libxkbcommon light \
