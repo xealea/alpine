@@ -4,6 +4,7 @@
 
 # Add user
 doas adduser lea wheel
+doas adduser lea fuse
 doas adduser lea input
 doas adduser lea video
 doas adduser lea audio
@@ -11,7 +12,7 @@ doas adduser lea audio
 # List of packages to install, sorted alphabetically
 packages="acpi alacritty autoconf automake build-base berry \
           consolekit2 cpufreqd curl dbus dhcpcd dmenu \
-          dunst eudev elogind elogind-openrc feh gettext git gvfs htop i3wm i3lock i3status \
+          dunst eudev elogind elogind-openrc fuse feh gettext git gvfs htop i3wm i3lock i3status \
           kitty libinput-libs libtool libxcb linux-firmware libxkbcommon light \
           lightdm lightdm-openrc lightdm-gtk-greeter maim \
           mesa-dri-gallium nano nemo \
@@ -63,6 +64,7 @@ doas rc-update add acpid default
 doas rc-update add elogind default 
 doas rc-update add cpufreqd default
 doas rc-update add mdev sysinit
+doas rc-update add fuse default
 
 # Enable hardware drivers
 doas rc-update add hwdrivers sysinit
