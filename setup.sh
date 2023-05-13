@@ -12,7 +12,7 @@ packages="acpi alacritty berry \
           consolekit2 cpufreqd curl dbus dhcpcd dmenu \
           dunst eudev feh git gvfs htop i3wm i3lock i3status \
           kitty libinput-libs libxcb libxkbcommon light \
-          lightdm lightdm-gtk-greeter linux-edge maim \
+          lightdm lightdm-openrc lightdm-gtk-greeter linux-edge maim \
           mesa-dri-gallium nano nemo \
           neofetch neovim network-manager-applet \
           networkmanager networkmanager-cli \
