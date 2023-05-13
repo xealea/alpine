@@ -19,7 +19,7 @@ packages="acpi alacritty berry \
           pulseaudio pulseaudio-alsa pulseaudio-ctl \
           pulseaudio-jack setxkbmap shadow \
           terminus-font transmission-qt \
-          udisks2 udiskie wireless-tools \
+          udisks2 udiskie \
           xorg-server xf86-input-libinput xfce4-power-manager \
           xfce4-terminal xrandr zzz"
 
@@ -58,11 +58,8 @@ doas rc-update add dbus default
 doas rc-update add udev sysinit
 doas rc-update add udev-trigger sysinit
 doas rc-update add udev-settle sysinit
-doas rc-update add udiskie default
-doas rc-update add udisks2 default
 doas rc-update add acpid default
 doas rc-update add elogind default
-doas rc-update add powertop default
 
 # Enable hardware drivers
 doas rc-update add hwdrivers sysinit
