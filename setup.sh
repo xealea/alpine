@@ -2,6 +2,17 @@
 
 # Script to add user and install packages on Alpine Linux
 
+# Write doas configuration to file
+cat <<EOF | doas tee /etc/doas.conf > /dev/null
+# Allow user to run poweroff, reboot, and shutdown commands
+permit nopass lea as root cmd poweroff
+permit nopass lea as root cmd reboot
+permit nopass lea as root cmd shutdown
+
+# Allow members of the "wheel" group to execute any command with elevated privileges
+permit :wheel
+EOF
+
 # Add user
 doas adduser lea wheel
 doas adduser lea input
