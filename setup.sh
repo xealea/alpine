@@ -20,7 +20,7 @@ packages="acpi alacritty \
           networkmanager-wifi nodejs pavucontrol \
           pciutils playerctl polkit polkit-elogind powertop \
           pulseaudio pulseaudio-alsa pulseaudio-ctl \
-          pulseaudio-jack qtile setxkbmap shadow \
+          pulseaudio-jack sway setxkbmap shadow \
           terminus-font thunar transmission-qt \
           udiskie wireless-tools \
           xorg-server xf86-input-libinput xfce4-power-manager \
