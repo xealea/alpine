@@ -10,7 +10,7 @@ doas adduser lea audio
 # List of packages to install, sorted alphabetically
 packages="acpi alacritty berry \
           consolekit2 cpufreqd curl dbus dhcpcd dmenu \
-          dunst eudev feh gvfs htop i3lock \
+          dunst eudev feh git gvfs htop i3wm i3lock \
           kitty libinput-libs libxcb libxkbcommon light \
           lightdm lightdm-gtk-greeter linux-edge maim \
           mesa-dri-gallium \
@@ -20,7 +20,7 @@ packages="acpi alacritty berry \
           networkmanager-wifi nodejs pavucontrol \
           pciutils playerctl polkit polkit-elogind powertop \
           pulseaudio pulseaudio-alsa pulseaudio-ctl \
-          pulseaudio-jack sway setxkbmap shadow \
+          pulseaudio-jack setxkbmap shadow \
           terminus-font thunar transmission-qt \
           udiskie wireless-tools \
           xorg-server xf86-input-libinput xfce4-power-manager \
