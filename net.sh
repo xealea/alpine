@@ -42,6 +42,6 @@ echo "[ipv6]" >> $SYSTEM_CONNECTIONS_FOLDER$SSID
 echo "method=auto" >> $SYSTEM_CONNECTIONS_FOLDER$SSID
 
 # Restart the NetworkManager service
-service NetworkManager restart
+service networkmanager restart
 
 echo "The configuration for $SSID has been saved to NetworkManager."
