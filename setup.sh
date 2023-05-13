@@ -10,19 +10,16 @@ doas adduser lea audio
 # List of packages to install, sorted alphabetically
 packages="acpi alacritty berry \
           consolekit2 cpufreqd curl dbus dhcpcd dmenu \
-          dunst eudev feh git gvfs htop i3wm i3lock i3status \
+          dunst eudev elogind elogind-openrc feh git gvfs htop i3wm i3lock i3status \
           kitty libinput-libs libxcb libxkbcommon light \
           lightdm lightdm-openrc lightdm-gtk-greeter linux-edge maim \
           mesa-dri-gallium nano nemo \
-          neofetch neovim network-manager-applet \
-          networkmanager networkmanager-cli \
-          networkmanager-openrc networkmanager-openvpn networkmanager-tui \
-          networkmanager-wifi nodejs pavucontrol \
+          neofetch neovim nodejs pavucontrol \
           pciutils playerctl polkit polkit-elogind powertop \
           pulseaudio pulseaudio-alsa pulseaudio-ctl \
           pulseaudio-jack setxkbmap shadow \
           terminus-font transmission-qt \
-          udiskie wireless-tools \
+          udisks2 udiskie wireless-tools \
           xorg-server xf86-input-libinput xfce4-power-manager \
           xfce4-terminal xrandr zzz"
 
@@ -62,13 +59,10 @@ doas rc-update add udev sysinit
 doas rc-update add udev-trigger sysinit
 doas rc-update add udev-settle sysinit
 doas rc-update add udiskie default
+doas rc-update add udisks2 default
 doas rc-update add acpid default
 doas rc-update add elogind default
 doas rc-update add powertop default
-
-# Disable wpa_supplicant and enable NetworkManager
-doas rc-update del wpa_supplicant default
-doas rc-update add NetworkManager default
 
 # Enable hardware drivers
 doas rc-update add hwdrivers sysinit
