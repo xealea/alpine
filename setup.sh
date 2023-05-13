@@ -42,6 +42,6 @@ doas rc-update add powertop default
 
 # Disable wpa_supplicant and enable NetworkManager
 doas rc-update del wpa_supplicant default
-doas rc-update add networkmanager default
+doas rc-update add NetworkManager default
 
 # End of script
