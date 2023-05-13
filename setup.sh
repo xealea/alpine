@@ -11,8 +11,8 @@ doas adduser lea audio
 packages="acpi alacritty berry \
           consolekit2 cpufreqd curl dbus dhcpcd dmenu \
           dunst eudev elogind elogind-openrc feh git gvfs htop i3wm i3lock i3status \
-          kitty libinput-libs libxcb libxkbcommon light \
-          lightdm lightdm-openrc lightdm-gtk-greeter linux-edge maim \
+          kitty libinput-libs libxcb linux-firmware libxkbcommon light \
+          lightdm lightdm-openrc lightdm-gtk-greeter maim \
           mesa-dri-gallium nano nemo \
           neofetch neovim nodejs pavucontrol \
           pciutils playerctl polkit polkit-elogind powertop \
@@ -59,7 +59,9 @@ doas rc-update add udev sysinit
 doas rc-update add udev-trigger sysinit
 doas rc-update add udev-settle sysinit
 doas rc-update add acpid default
-doas rc-update add elogind default
+doas rc-update add elogind default 
+doas rc-update add cpufreqd default
+doas rc-update add mdev sysinit
 
 # Enable hardware drivers
 doas rc-update add hwdrivers sysinit
