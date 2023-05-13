@@ -9,14 +9,14 @@ doas adduser lea video
 doas adduser lea audio
 
 # List of packages to install, sorted alphabetically
-packages="acpi alacritty berry \
+packages="acpi alacritty autoconf automake build-base berry \
           consolekit2 cpufreqd curl dbus dhcpcd dmenu \
-          dunst eudev elogind elogind-openrc feh git gvfs htop i3wm i3lock i3status \
-          kitty libinput-libs libxcb linux-firmware libxkbcommon light \
+          dunst eudev elogind elogind-openrc feh gettext git gvfs htop i3wm i3lock i3status \
+          kitty libinput-libs libtool libxcb linux-firmware libxkbcommon light \
           lightdm lightdm-openrc lightdm-gtk-greeter maim \
           mesa-dri-gallium nano nemo \
           neofetch neovim nodejs pavucontrol \
-          pciutils playerctl polkit polkit-elogind powertop \
+          pciutils pkgconfig playerctl polkit polkit-elogind powertop \
           pulseaudio pulseaudio-alsa pulseaudio-ctl \
           pulseaudio-jack setxkbmap shadow \
           terminus-font transmission-qt \
