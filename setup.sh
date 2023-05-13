@@ -11,7 +11,7 @@ doas adduser lea audio
 packages="acpi alacritty \
           consolekit2 cpufreqd curl dbus dhcpcd dmenu \
           dunst eudev feh gvfs htop i3lock \
-          libinput-libs libxcb libxkbcommon light \
+          kitty libinput-libs libxcb libxkbcommon light \
           lightdm lightdm-gtk-greeter linux-edge maim \
           mesa-dri-gallium \
           neofetch neovim network-manager-applet \
