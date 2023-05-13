@@ -39,6 +39,11 @@ do
         --intel)
             packages="$packages xf86-video-intel mesa-vulkan-intel"
             ;;
+        --i3conf)
+            # Add i3wm configuration
+            mkdir -p ~/.config/i3
+            doas cp /etc/i3/config ~/.config/i3/config
+            ;;
         *)
             echo "Invalid option: $1" >&2
             exit 1
