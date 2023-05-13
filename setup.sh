@@ -22,7 +22,7 @@ packages="acpi alacritty autoconf automake build-base berry \
           terminus-font transmission-qt \
           udisks2 udiskie \
           xorg-server xf86-input-libinput xfce4-power-manager \
-          xfce4-terminal xrandr zzz"
+          xdg-user-dirs xfce4-terminal xrandr zzz"
 
 # Parse command line options
 while [ $# -gt 0 ]
