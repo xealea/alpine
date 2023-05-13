@@ -4,7 +4,6 @@
 
 # Add user
 doas adduser lea wheel
-doas adduser lea fuse
 doas adduser lea input
 doas adduser lea video
 doas adduser lea audio
