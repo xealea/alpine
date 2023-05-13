@@ -13,7 +13,7 @@ packages="acpi alacritty berry \
           dunst eudev feh git gvfs htop i3wm i3lock i3status \
           kitty libinput-libs libxcb libxkbcommon light \
           lightdm lightdm-gtk-greeter linux-edge maim \
-          mesa-dri-gallium nano \
+          mesa-dri-gallium nano nemo \
           neofetch neovim network-manager-applet \
           networkmanager networkmanager-cli \
           networkmanager-openrc networkmanager-openvpn networkmanager-tui \
@@ -21,7 +21,7 @@ packages="acpi alacritty berry \
           pciutils playerctl polkit polkit-elogind powertop \
           pulseaudio pulseaudio-alsa pulseaudio-ctl \
           pulseaudio-jack setxkbmap shadow \
-          terminus-font thunar transmission-qt \
+          terminus-font transmission-qt \
           udiskie wireless-tools \
           xorg-server xf86-input-libinput xfce4-power-manager \
           xfce4-terminal xrandr zzz"
