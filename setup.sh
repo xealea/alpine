@@ -11,7 +11,7 @@ doas adduser lea audio
 
 # List of packages to install, sorted alphabetically
 packages="acpi alacritty autoconf automake build-base berry \
-          consolekit2 cpufreqd curl dbus dhcpcd dmenu \
+          consolekit2 cpufreqd curl dbus dbus-glib dhcpcd dmenu \
           dunst eudev elogind elogind-openrc fuse feh gettext git gvfs htop i3wm i3lock i3status \
           kitty libinput-libs libtool libxcb linux-firmware libxkbcommon light \
           lightdm lightdm-openrc lightdm-gtk-greeter maim \
