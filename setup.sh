@@ -3,6 +3,7 @@
 # Script to add user and install packages on Alpine Linux
 
 # Add user
+doas adduser lea wheel
 doas adduser lea input
 doas adduser lea video
 doas adduser lea audio
