@@ -10,7 +10,7 @@ doas adduser lea audio
 # List of packages to install, sorted alphabetically
 packages="acpi alacritty berry \
           consolekit2 cpufreqd curl dbus dhcpcd dmenu \
-          dunst eudev feh git gvfs htop i3wm i3lock \
+          dunst eudev feh git gvfs htop i3wm i3lock i3status \
           kitty libinput-libs libxcb libxkbcommon light \
           lightdm lightdm-gtk-greeter linux-edge maim \
           mesa-dri-gallium nano \
