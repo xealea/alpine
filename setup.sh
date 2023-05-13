@@ -26,6 +26,27 @@ packages="acpi alacritty \
           xorg-server xf86-input-libinput xfce4-power-manager \
           xfce4-terminal xrandr zzz"
 
+# Parse command line options
+while [ $# -gt 0 ]
+do
+    case "$1" in
+        --nvidia)
+            packages="$packages nvidia nvidia-settings"
+            ;;
+        --amd)
+            packages="$packages xf86-video-amdgpu mesa-vulkan-radeon libva-mesa-driver"
+            ;;
+        --intel)
+            packages="$packages xf86-video-intel mesa-vulkan-intel"
+            ;;
+        *)
+            echo "Invalid option: $1" >&2
+            exit 1
+            ;;
+    esac
+    shift
+done
+
 # Install packages
 doas apk add $packages
 
@@ -43,5 +64,8 @@ doas rc-update add powertop default
 # Disable wpa_supplicant and enable NetworkManager
 doas rc-update del wpa_supplicant default
 doas rc-update add NetworkManager default
+
+# Enable hardware drivers
+doas rc-update add hwdrivers sysinit
 
 # End of script
