@@ -13,7 +13,7 @@ packages="acpi alacritty berry \
           dunst eudev feh git gvfs htop i3wm i3lock \
           kitty libinput-libs libxcb libxkbcommon light \
           lightdm lightdm-gtk-greeter linux-edge maim \
-          mesa-dri-gallium \
+          mesa-dri-gallium nano \
           neofetch neovim network-manager-applet \
           networkmanager networkmanager-cli \
           networkmanager-openrc networkmanager-openvpn networkmanager-tui \
